@@ -1,0 +1,64 @@
+Neural Networks:
+    -Neurons are connected to and receive electrical signals from other neurons.
+    -Neurons process input signals and can be activated.
+
+Artifical Neural Network: 
+    -Mathematical model for learning inspired by biological neural networks.
+    -Model mathematical function from inputs to outputs based on the structure and parameters of the network.
+    -Allows for learning the network's parameters based on data.
+
+h(x1, x2) = w0 + w1x1 + w2x2
+
+Step Function: g(x) = 1 if x > 0, else 0
+
+Logistic Sigmoid: g(x) = ex / ex+1
+
+Rectified Linear Unit (ReLU): g(x) = max(0, x)
+
+h(x1, x2) = g(w0 + w1x1 + w2x2)
+
+
+
+| x | y | f(x, y) |
+| 0 | 0 |    0    |
+| 0 | 1 |    1    |
+| 1 | 0 |    1    |
+| 1 | 1 |    1    |
+
+Gradient Descent: Algorithm for minimizing loss when training neural network.
+    
+
+Mini-Batch Gradient Descent:
+    -Start with a random choice of weights.
+    -Repeat:
+        -Calculate the gradient based on all data points: Direction that will lead to descreasing loss.
+        -Update weights according to the gradient.
+
+Perceptron: Only capable of learning linearly separable descision boundary.
+
+Multilayer Neural Network: Artifical neural network with an input layer, an output layer, and at least one hidden layer.
+
+Backpropagation: Algorithm for training neural networks with hidden layers.
+    
+    -Start with a random choice of weights.
+    -Repeat: 
+        -Calculate error for output layer.
+        -For each layer, starting with output layer, and moving inwards towards earliest hidden layer:
+            -Propagate error back one layer.
+            -Update weights.
+
+Deep Neural Networks: Neural network with multiple hidden layers.
+
+Dropout: Temporarily removing units - selected at random - from a neural network to prevent over-reilance on certaşn units.
+
+Computer Vision: Computational methods for analyzing and understanding digital images.
+
+Image Convoluation: Applying a filter that adds each pixel value of an image to its neighbors, weighted according to a kernel matrix.
+
+Pooling: Reducing the size of an input by sampling from regions in the input.
+
+Max-Pooling: Pooling by choosing the maximum value in each region.
+
+Convoluation Neural Network: Neural networks that use convoluation, usually for analyzing images.
+
+Feed-Forward Neural Network: Neural network that has connections only in one direction.
